@@ -1,0 +1,39 @@
+.container {
+    margin-top: 20px;
+
+    
+
+    .image-detail {
+        display: flex; /* Sử dụng Flexbox để căn chỉnh hình ảnh và văn bản bên cạnh nhau */
+        gap: 20px; /* Khoảng cách giữa hình ảnh và văn bản */
+        align-items: flex-start; /* Căn chỉnh văn bản và hình ảnh về phía trên cùng */
+
+        .img-fluid {
+            max-width: 50%; /* Chiều rộng tối đa của hình ảnh */
+            height: auto; /* Giữ tỷ lệ hình ảnh */
+            border-radius: 8px; /* Bo góc hình ảnh */
+        }
+
+        .text-detail {
+            max-width: 500px; /* Chiều rộng tối đa cho văn bản */
+            text-align: center;
+        }
+
+        .btn-back {
+            display: inline-block; 
+            margin-bottom: 20px; 
+            padding: 8px 16px; 
+            font-size: 16px; 
+            background-color: #007bff; 
+            color: #fff; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            text-align: center;
+    
+            &:hover {
+                background-color: #0056b3; 
+            }
+        }
+    }
+}

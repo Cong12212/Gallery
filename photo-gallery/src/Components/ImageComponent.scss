@@ -1,0 +1,70 @@
+.gallery {
+  display              : grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  flex-direction       : column;
+  max-height           : 100px;
+
+  .image-item {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    width         : auto;
+    height        : 100%;
+  }
+}
+
+.image-item img {
+  max-width    : auto;
+  height       : 100%;
+  border-radius: 4px;
+}
+
+.image-item p {
+  max-width  : 100%;
+  align-items: flex-end;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8); // Màu nền cho modal
+}
+
+.modal-content {
+  border-radius: 10px; // Bo góc cho modal
+  padding      : 20px; // Padding bên trong modal
+  // box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); // Đổ bóng cho modal
+}
+
+.modal-header {
+  border-bottom: none; // Bỏ đường viền dưới header
+}
+
+.close {
+  position  : absolute; // Đặt vị trí tuyệt đối
+  top       : 15px; // Cách trên
+  right     : 20px; // Cách bên phải
+  color     : rgb(0, 0, 0); // Màu chữ cho nút đóng
+  font-size : 30px; // Kích thước chữ cho nút đóng
+  background: none; // Bỏ nền cho nút
+  border    : none; // Bỏ viền cho nút
+  cursor    : pointer; // Đổi con trỏ khi hover
+  color     : #ff4d4d; // Màu khi hover
+}
+
+.modal-title {
+  font-size  : 20px; // Kích thước chữ cho tiêu đề modal
+  font-weight: bold; // Chữ in đậm cho tiêu đề
+}
+
+.modal-body {
+  display: flex; // Căn giữa nội dung trong modal
+
+  .modal-body-img {
+    max-width    : 60%;
+    border-radius: 10px; // Bo góc cho hình ảnh
+    margin-bottom: 15px; // Khoảng cách dưới hình ảnh
+  }
+
+  .modal-body-p {
+    flex-direction: column;
+  }
+}
